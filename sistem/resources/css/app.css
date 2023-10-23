@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #135E69;
+}
+
+.navbar-brand img {
+    margin-right: 5px;
+}
+
+.nav-text {
+  color: white; 
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.nav-text:hover {
+    color: #F4A03A !important;
+}
+
+.big-text {
+  color: white;
+  font-size: 34pt;
+  font-weight: 900;
+}
+
+.big-text-color {
+  font-size: 34pt;
+  font-weight: 900;
+}
+
+.carouselHero .carousel-item img {  
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height:100vh;
+  }
+  
+.carouselHero .carousel-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+}
+
+.horizontal-line {
+    display: flex;
+    align-items: center;
+}
+
+.garis {
+    width: 15%; 
+    border: 2px solid white;
+    margin-left: -20px;
+    margin-top: 30px;
+}
+
+.garis-warna {
+    width: 15%; 
+    border: 2px solid #F4A03A;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 0 0 260px;
+    margin: 70px 0 70px 0;
+}
+
+.card-berita {
+  margin: 100px 50px 100px 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.card-img-top {
+    width: 258px;
+    height: 180px;
+}
+
+.footer-container {
+    background-color: #135E69;
+    color: white;
+}
+
+.map-responsive {
+    position: relative;
+    height: 0;
+    padding-bottom: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+}
+
+
+
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
